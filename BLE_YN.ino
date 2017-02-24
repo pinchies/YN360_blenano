@@ -4,7 +4,7 @@ BLE           ble;
 static uint8_t led_found = 0; // have we found the YN360 device yet?
 static uint8_t characteristic_is_found = 0; // does this device have the characteristic we want to communicate with?
 
-// To save the hrm characteristic and descriptor
+// To save the characteristic and descriptor
 static DiscoveredCharacteristic            chars_led; // to store the address of the characteristic we want to communicate with, easier than storing whole multi-byte uuid of characteristic
 
 static void scanCallBack(const Gap::AdvertisementCallbackParams_t *params);
